@@ -85,7 +85,7 @@
 .top-container, .top-container-2{
     padding-left: 5%;
     padding-right: 20%;
-    margin-top: 20%;
+    margin-top: 12%;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -96,16 +96,86 @@ i {
 
 .top-container-2 {
     margin-top: 2%;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 
 .bottom-container {
     padding-left: 5%;
     padding-right: 20%;
-    margin-top: 20%;
-    font-size: 0.9rem;
+    margin-top: 3%;
+    font-size: 0.95rem;
 }
 .bottom-container span {
     color: green;
     font-size: 0.9 rem;
+}
+
+
+/* -------------------------------Form----------------------------------------------- */
+
+.legend {
+    margin-top: 2%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.805);
+}
+
+button {
+    margin-top: 4%;
+    margin-left: 5%;
+    background: #596D48;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: translateY(-0.30em);
+}
+
+fieldset {
+    height: 37vh;
+    padding-left: 5%;
+    padding-right: 20%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.5);
+    
+}
+
+.row {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstItem, .secondItem {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.805);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
 }
