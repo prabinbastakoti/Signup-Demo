@@ -8,34 +8,37 @@
     <title>Signup - The Odin Project</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="images/favicom.png">
+    <script defer src="index.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="leftHalf">
-            <div class="odinImage">
+            <div class="odinImage prevent-select">
                 <img src="images/odin-lined.png">
                 <div class="odinText">ODIN</div>
             </div>
-            <div class="image">
+            <div class="image prevent-select">
                 <img src="images/background2.jpg">
             </div>
-            <div class="creator">Photo by <a
-                    href="https://unsplash.com/@maximalfocus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maximalfocus</a>
-                on <a
-                    href="https://unsplash.com/photos/HakTxidk36I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            <div class="creator prevent-select">Photo by <a
+                    href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie
+                    West</a> on <a
+                    href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
             </div>
         </div>
         <div class="rightHalf">
 
             <div class="top-container">This is not a real online service! You know you need something
-                like this in your life to help you realize your deepest dreams. 
-                <br> Sign up <i>now&nbsp;</i> to get started.</div>
+                like this in your life to help you realize your deepest dreams.
+                <br> Sign up <i>now&nbsp;</i> to get started.
+            </div>
 
             <div class="top-container-2">You <i>know&nbsp;</i> you want to.</div>
 
             <div class="form-container">
-                <form action="" method="post">
+                <form action="" method="get">
                     <fieldset>
 
                         <div class="legend">Let's do this!</div>
@@ -45,15 +48,15 @@
                             <div class="firstItem">
 
                                 <label for="firstname">First Name</label>
-                                <input type="text" name="firstname" id="firstname">
-                                
+                                <input type="text" name="firstname" id="firstname" required>
+
                             </div>
 
                             <div class="secondItem">
 
                                 <label for="lastname">Last Name</label>
-                                <input type="text" name="lastname" id="lastname">
-                                
+                                <input type="text" name="lastname" id="lastname" required>
+
                             </div>
                         </div>
 
@@ -62,15 +65,15 @@
                             <div class="firstItem">
 
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
-                                
+                                <input type="email" name="email" id="email" required>
+
                             </div>
-                       
+
                             <div class="secondItem">
 
                                 <label for="Phone Number">Phone Number</label>
-                                <input type="number" name="Phone Number" id="Phone Number">
-                                
+                                <input type="tel" name="Phone Number" id="Phone Number" required>
+
                             </div>
                         </div>
 
@@ -79,24 +82,26 @@
                             <div class="firstItem">
 
                                 <label for="password">Password</label>
-                                <input type="password" name="password" id="password">
-                                
+                                <input type="password" name="password" id="password" required>
+                                <div class="blank">&nbsp;</div>
+
                             </div>
-                      
+
                             <div class="secondItem">
 
                                 <label for="confirmpassword">Confirm Password</label>
-                                <input type="password" name="confirmpassword" id="confirmpassword">
-                                
+                                <input type="password" name="confirmpassword" id="confirmpassword" required>
+                                <div class="error">&nbsp;</div>
+
                             </div>
                         </div>
                     </fieldset>
 
-                    <button type="submit">Create Account</button>
+                    <button type="submit" class="prevent-select">Create Account</button>
 
                 </form>
             </div>
-            <div class="bottom-container">Already have an account? <span>Log in</span></div>
+            <div class="bottom-container prevent-select">Already have an account? <a href="#">Log in</a></div>
         </div>
     </div>
 </body>

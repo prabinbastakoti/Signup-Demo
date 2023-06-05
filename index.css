@@ -1,10 +1,19 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @font-face {
     font-family: norseBold;
     src: url(font/Norse-Bold.otf);
 }
+
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -25,7 +34,7 @@
 
 
 
-.container .leftHalf .image img{
+.container .leftHalf .image img {
     width: 40vw;
     height: 100vh;
 }
@@ -43,6 +52,7 @@
 }
 
 .creator a {
+    text-decoration: underline;
     color: white;
     font-size: 0.6rem;
 }
@@ -82,7 +92,8 @@
     /* justify-content: space-around; */
 }
 
-.top-container, .top-container-2{
+.top-container,
+.top-container-2 {
     padding-left: 5%;
     padding-right: 20%;
     margin-top: 12%;
@@ -105,11 +116,12 @@ i {
     margin-top: 3%;
     font-size: 0.95rem;
 }
-.bottom-container span {
+
+a {
+    text-decoration: none;
     color: green;
     font-size: 0.9 rem;
 }
-
 
 /* -------------------------------Form----------------------------------------------- */
 
@@ -132,10 +144,12 @@ button {
     border: none;
     outline: none;
     transition: 0.25s;
+    cursor: pointer;
 }
 
 button:hover {
     transform: translateY(-0.30em);
+
 }
 
 fieldset {
@@ -145,7 +159,7 @@ fieldset {
     border: none;
     outline: none;
     box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.5);
-    
+
 }
 
 .row {
@@ -155,7 +169,8 @@ fieldset {
     align-items: center;
 }
 
-.firstItem, .secondItem {
+.firstItem,
+.secondItem {
     display: flex;
     flex-direction: column;
 }
@@ -178,4 +193,12 @@ input {
 input:focus {
     border: 1px solid blue;
     outline: none;
+}
+
+.error {
+    margin-top: 1%;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 2px;
 }
